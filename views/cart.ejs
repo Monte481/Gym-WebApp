@@ -1,0 +1,31 @@
+
+<%- include('partials/header')%>
+<script src="/scripts/cart_script.js"></script>
+<link rel="stylesheet" href="/styles/cart_style.css">
+
+<main id="main_box">
+    <div id="not_empty_cart">
+        <div class="cart_box">
+            <div id="title">
+                <h3>Product name</h3>
+                <h3>Price</h3>
+                <h3>Amount</h3>
+            </div>
+            <ul id="added_items"></ul>
+        </div>
+        <div class="payment">
+            <div class="total_amount">
+                <h3>Total price :</h3>
+                <h4 id="amount"></h4>
+            </div>
+            <button id="pay_button">PAY</button>
+        </div>
+    </div>
+    <div class="empty_cart" id="empty_cart">
+        <h3>YOUR CART IS EMPTY!</h3>
+        <p>Go back to the shop to continue shopping.</p>
+        <img src="/images/empty.png" alt="Empty Cart">
+    </div>
+</main>
+
+<%- include('partials/footer')%>
